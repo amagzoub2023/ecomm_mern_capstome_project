@@ -6,8 +6,10 @@ const multer = require("multer");
 const path = require("path");
 const cors = require("cors");
 
-const port = 4000;
+//onst port = 4000;
+
 require('dotenv').config()
+const port = process.env.PORT || 4000;
 const uri = process.env.MONGODB_URI;
 
 const Product = require('./Models/productModel')
