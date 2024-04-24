@@ -1,0 +1,70 @@
+/* .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 60px;
+    box-shadow: 0 1px 3px -2px black;
+    margin-bottom: 1px;
+    background: white;
+} */
+
+.navbar {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    font-size: 28px;
+    padding: 15px 60px;
+    box-shadow: 0 1px 3px -2px black;
+    margin-bottom: 1px;
+    background: white;
+  }
+  
+/*  
+.navbar {
+    display: flex;
+    padding: 15px 60px;
+    box-shadow: 0 1px 3px -2px black;
+    margin-bottom: 1px;
+    background: white;
+  }
+  */
+  .shop-details {
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    margin-bottom: 1px;
+  }
+
+  .shop-name {
+    margin: 0; /* Remove default margin */
+  }
+  
+  .admin-panel {
+    font-size: 16px; /* Smaller font size */
+    margin-top: 1px; /* Adjust margin to create space */
+    margin-bottom: 1px;
+    color: #888; /* Adjust color if needed */
+  }
+  
+  img {
+    max-height: 45px; /* Adjust maximum height of the logo */
+  }
+
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px 20px;
+    }
+    
+    .shop-details {
+      margin-bottom: 10px;
+    }
+  
+    .admin-panel {
+      font-size: 14px;
+    }
+  
+    img {
+      max-height: 40px;
+    }
+  }
