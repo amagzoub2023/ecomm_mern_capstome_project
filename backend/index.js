@@ -124,7 +124,7 @@ app.get("/allproducts", async (req, res) => {
 app.get("/newcollections", async (req, res) => {
     let products = await Product.find({});
     let arr = products.slice(1).slice(-8);
-    console.log(arr);
+    // console.log(arr);
     console.log("New Collections");
     res.send(arr);
 });
@@ -132,7 +132,7 @@ app.get("/newcollections", async (req, res) => {
 app.get("/popularinwomen", async (req, res) => {
     let products = await Product.find({});
     let arr = products.splice(0, 4);
-    console.log(arr);
+    // console.log(arr);
     console.log("Popular In Women");
     res.send(arr);
 });

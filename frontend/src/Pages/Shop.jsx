@@ -27,10 +27,9 @@ const Shop = () => {
   return (
     <div>
       <Hero/>
-      <Popular data={popular}/>
+      <Popular data={popular}/><NewsLetter/>
       <Offers/>
       <NewCollections data={newcollection}/>
-      <NewsLetter/>
     </div>
   )
 }
