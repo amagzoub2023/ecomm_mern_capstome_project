@@ -104,6 +104,8 @@ const ShopContextProvider = (props) => {
   };
 
   const contextValue = {products, getTotalCartItems, cartItems, addToCart, removeFromCart, getTotalCartAmount };
+  console.log(products);
+
   return (
     <ShopContext.Provider value={contextValue}>
       {props.children}
@@ -112,22 +114,3 @@ const ShopContextProvider = (props) => {
 };
 
 export default ShopContextProvider;
-
-
-/*
-import React, { createContext} from "react";
-import all_product from "../Components/Assets/all_product";
-
-export const ShopContext = createContext(null);
-
-const ShopContextProvider = (props) => {
-  const contextValue = { products: all_product }; // Assign all_product directly to products
-  return (
-    <ShopContext.Provider value={contextValue}>
-      {props.children}
-    </ShopContext.Provider> 
-  );
-}
-
-export default ShopContextProvider;
-*/
